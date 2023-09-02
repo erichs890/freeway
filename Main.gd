@@ -8,6 +8,7 @@ func _ready():
 	$AudioTema.play()
 	$Hud/Mensagem.text = ""
 	$Hud/Button.hide()
+	$Hud/menu.hide()
 	randomize()
 
 func _on_TimerCarrosRapidos_timeout():
@@ -36,6 +37,7 @@ func _on_Player_pontua():
 		$Hud/Mensagem.text = "Player Ganhou!"
 		$Hud/Button.show()
 		$Player.hide()
+		$Hud/menu.show()
 		
 	else:
 			$Hud/Placar.text = str(score)
@@ -50,5 +52,5 @@ func _on_Hud_reinicia():
 	$TimerCarrosLentos.start()
 	$Hud/Mensagem.text = ""
 	$Hud/Placar.text = "0"
-	$Hud/Button.hide()
+	$Hud/menu.show()
 	$Player.show()

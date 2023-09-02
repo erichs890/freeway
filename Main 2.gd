@@ -10,6 +10,7 @@ func _ready():
 	$Hud2/Mensagem1.text = ""
 	$Hud2/Mensagem2.text = ""
 	$Hud2/Button1.hide()
+	$Hud2/botao.hide()
 	randomize()
 
 func _on_TimerCarrosRapidos_timeout():
@@ -38,7 +39,7 @@ func _on_Player_pontua():
 		$Hud2/Button1.show()
 		$Player.hide()
 		$Player.hide()
-		
+		$Hud2/botao.show()
 	else:
 		$Hud2/Placar1.text = str(score)
 		$AudioPonto.play()
@@ -54,6 +55,7 @@ func _on_Player2_pontua2():
 		$Hud2/Button1.visible = true
 		$Player2.hide()
 		$Player.hide()
+		$Hud2/botao.show()
 	else:
 		$Hud2/Placar2.text = str(score2)
 		$AudioPonto.play()
@@ -76,4 +78,5 @@ func _on_Hud2_reinicia():
 	$Hud2/Button1.hide()
 	$Player.show()
 	$Player2.show()
+	$Hud2/botao.hide()
 

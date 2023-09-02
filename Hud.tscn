@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Hud.gd" type="Script" id=1]
 [ext_resource path="res://Material freeway/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
@@ -15,6 +15,10 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 32
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
 font_data = ExtResource( 2 )
 
 [node name="Hud" type="CanvasLayer"]
@@ -53,4 +57,13 @@ margin_bottom = 60.0
 custom_fonts/font = SubResource( 3 )
 text = "reiniciar"
 
+[node name="menu" type="Button" parent="."]
+margin_left = 442.0
+margin_top = 436.0
+margin_right = 823.0
+margin_bottom = 535.0
+custom_fonts/font = SubResource( 4 )
+text = "menu"
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
