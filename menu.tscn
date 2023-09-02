@@ -52,7 +52,7 @@ margin_bottom = 700.0
 custom_fonts/font = SubResource( 3 )
 text = "2 jogadores"
 
-[connection signal="pressed" from="Player 1" to="." method="_on_Player_1_pressed"]
 [connection signal="pressed" from="Player 1" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="Player 2" to="." method="_on_Player_2_pressed"]
+[connection signal="pressed" from="Player 1" to="." method="_on_Player_1_pressed"]
 [connection signal="pressed" from="Player 2" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Player 2" to="." method="_on_Player_2_pressed"]

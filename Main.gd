@@ -52,5 +52,7 @@ func _on_Hud_reinicia():
 	$TimerCarrosLentos.start()
 	$Hud/Mensagem.text = ""
 	$Hud/Placar.text = "0"
-	$Hud/menu.show()
+	$Hud/menu.hide()
 	$Player.show()
+	$Hud/Button.hide()
+	

@@ -80,3 +80,4 @@ func _on_Hud2_reinicia():
 	$Player2.show()
 	$Hud2/botao.hide()
 
+# feito por erich lima schlaepfer
