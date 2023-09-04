@@ -47,8 +47,8 @@ text = "1 jogador"
 [node name="Player 2" type="Button" parent="."]
 margin_left = 464.0
 margin_top = 603.0
-margin_right = 838.0
-margin_bottom = 700.0
+margin_right = 829.0
+margin_bottom = 702.0
 custom_fonts/font = SubResource( 3 )
 text = "2 jogadores"
 

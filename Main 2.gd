@@ -38,7 +38,7 @@ func _on_Player_pontua():
 		$Hud2/Mensagem1.text = "Player 1 Ganhou!"
 		$Hud2/Button1.show()
 		$Player.hide()
-		$Player.hide()
+		$Player2.hide()
 		$Hud2/botao.show()
 	else:
 		$Hud2/Placar1.text = str(score)
@@ -80,4 +80,4 @@ func _on_Hud2_reinicia():
 	$Player2.show()
 	$Hud2/botao.hide()
 
-# feito por erich lima schlaepfer
+# feito por Erich Lima Schlaepfer
