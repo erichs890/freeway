@@ -60,8 +60,8 @@ text = "reiniciar"
 [node name="menu" type="Button" parent="."]
 margin_left = 442.0
 margin_top = 436.0
-margin_right = 823.0
-margin_bottom = 535.0
+margin_right = 842.0
+margin_bottom = 556.0
 custom_fonts/font = SubResource( 4 )
 text = "menu"
 
